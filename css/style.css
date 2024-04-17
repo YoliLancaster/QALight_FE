@@ -1,0 +1,50 @@
+@import url(../css/reset.css);
+
+@import url(../css/base.css);
+@import url(../css/header.css);
+
+@font-face {
+  font-display: swap;
+  font-family: "Encode Sans Expanded";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/encode-sans-expanded-v11-latin-200.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Encode Sans Expanded";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/encode-sans-expanded-v11-latin-regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Encode Sans Expanded";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/encode-sans-expanded-v11-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Encode Sans Expanded";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/encode-sans-expanded-v11-latin-800.woff2") format("woff2");
+}
+
+/* helpers */
+.highlighted {
+  color: var(--color-primary-light);
+}
+
+.bold {
+  font-weight: 800;
+}
+
+section {
+  margin-bottom: 50px;
+}

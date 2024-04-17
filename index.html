@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MagicVet</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
@@ -15,14 +15,15 @@
             class="logo"
             src="/img/vecteezy_veterinary-logo-cat-and-dog-logo-design-pet-care-vet_8249492.svg"
             alt="vet clinic logo with cat, dog & bird" />
-          <p>Magic <span>Vet</span></p>
+          <p>Magic <span class="highlighted">Vet</span></p>
         </div>
 
         <nav>
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contacts">Contacts</a></li>
           </ul>
         </nav>
 
@@ -32,7 +33,10 @@
     <main>
       <section>
         <div class="container">
-          <h1>The best care support for your <span>best friend</span></h1>
+          <h1>
+            The best care support for your
+            <span class="highlighted bold">best friend</span>
+          </h1>
           <p>
             Here, you will find answers to all your questions, from choosing the
             best food to essential tips to ensure your furry companion's
@@ -43,7 +47,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="about">
         <div class="container">
           <h2>
             Learn essential tips to give your pet the comfort it deserves!
@@ -74,7 +78,7 @@
           <button class="login" type="button">Log in</button>
         </div>
       </section>
-      <section>
+      <section id="services">
         <div class="container">
           <div></div>
           <div>
@@ -96,9 +100,13 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="testimonials">
         <div class="container">
-          <h2>Find out what Magic Vet users are thinking about the Clinic!</h2>
+          <h2>
+            Find out what Magic Vet
+            <span class="highlighted bold">Pet Parents</span> are thinking about
+            the Clinic!
+          </h2>
           <div class="slider">
             <article>
               <div>
@@ -106,15 +114,28 @@
                 <h3>Name</h3>
                 <p>descr</p>
               </div>
-              <hr />
+              ----
               <div>text</div>
             </article>
           </div>
         </div>
       </section>
-      <section></section>
+      <section id="contacts">
+        <div class="container">
+          <h2>Don't miss our updates!</h2>
+          <p>Sign up to receive news, new tools, discounts, updates...</p>
+
+          <ul>
+            <li>Receive first-hand updates</li>
+            <li>Get discount coupons</li>
+            <li>Read articles on relevant topics</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer></footer>
     </main>
 
-    <script src="../fetch.js"></script>
+    <script src="../helpers/fetch.js"></script>
   </body>
 </html>
