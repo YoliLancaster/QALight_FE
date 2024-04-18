@@ -3,3 +3,33 @@
   width: 150px;
   height: 150px;
 }
+
+.container-header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.menu-list {
+  display: flex;
+  gap: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container p {
+  font-weight: 800;
+  font-size: 40px;
+  /* padding-top: 90px; */
+}

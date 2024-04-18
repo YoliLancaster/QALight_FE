@@ -21,7 +21,7 @@ async function initSlider() {
     return data
       .map(
         ({ id, name, picture, location }, index) =>
-          `<div class="swiper-slide">
+          `<div class="swiper-slide" data-swiper-autoplay="7000">
           <div class="thumbnail">
                   <img src="${picture.large}" />
                 </div>
@@ -45,8 +45,8 @@ async function initSlider() {
     direction: "horizontal",
     autoHeight: true,
     loop: true,
-    speed: 400,
-    autoplay: false,
+    speed: 700,
+    autoplay: true,
     parallax: true,
 
     navigation: {
