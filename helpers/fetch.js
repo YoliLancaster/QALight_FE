@@ -1,14 +1,11 @@
-async function fetchData() {
+export async function fetchData() {
   try {
-    const {
-      data: { results },
-    } = await axios.get(
-      "https://randomuser.me/api/?results=10&inc=id,gender,name,picture"
+    const response = await axios.get(
+      "https://randomuser.me/api/?results=10&inc=id,gender,name,picture,location"
     );
-    console.log(results);
+    return response.data.results;
   } catch (error) {
-    console.error("Ошибка при запросе:", error);
+    console.error("Error fetching data:", error);
+    return [];
   }
 }
-
-fetchData();
