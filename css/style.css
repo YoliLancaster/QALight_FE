@@ -4,6 +4,7 @@
 @import url(../css/buttons.css);
 @import url(../css/header.css);
 @import url(../css/hero-section.css);
+@import url(../css/about-section.css);
 @import url(../css/swiper-slider.css);
 
 @font-face {
@@ -40,14 +41,10 @@
 }
 
 /* helpers */
-.highlighted {
-  color: var(--color-primary-light);
-}
-
 .bold {
   font-weight: 800;
 }
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }

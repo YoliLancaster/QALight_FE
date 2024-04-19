@@ -4,12 +4,18 @@
   height: 150px;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 40px;
+}
+
 .container-header {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 40px;
+  justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
+  max-width: 1288px;
 }
 
 .menu {
@@ -32,4 +38,12 @@
   font-weight: 800;
   font-size: 40px;
   /* padding-top: 90px; */
+}
+
+.opacity {
+  opacity: 0.8;
+}
+
+.highlighted {
+  color: var(--color-primary-light);
 }

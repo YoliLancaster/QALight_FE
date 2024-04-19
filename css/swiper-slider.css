@@ -79,6 +79,7 @@
   margin-top: 10px;
   margin-bottom: 60px;
   opacity: 0;
+  text-wrap: balance;
   transform: translateX(10%);
   transition: transform 1s, opacity 1s;
 }
