@@ -15,17 +15,17 @@
   flex-direction: column;
 }
 
+.right-side {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .left-side p {
   font-size: 20px;
   margin-bottom: 40px;
   line-height: 1.5;
   font-weight: 200;
   text-wrap: balance;
-}
-
-.right-side {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .hero-img {

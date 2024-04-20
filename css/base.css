@@ -1,7 +1,7 @@
 /* Base */
 :root {
   --color-primary-light: #fbbc05;
-
+  --banner-bg-grey: #e7eaee;
   --slider-grey: #ced6e0;
   --slider-shadow: rgb(0 0 2 / 35%) 0px 20px 30px -10px;
   scroll-behavior: smooth;

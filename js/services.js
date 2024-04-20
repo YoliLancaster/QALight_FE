@@ -4,8 +4,6 @@ const grid = document.querySelector(".grid");
 
 grid.innerHTML = "";
 
-console.log("Services:", services);
-
 const cardItem = createCard(services);
 grid.innerHTML = cardItem;
 

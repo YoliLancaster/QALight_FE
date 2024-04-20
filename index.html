@@ -8,13 +8,15 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="container-header">
         <div class="logo-container">
-          <img
-            class="logo"
-            src="../img/vecteezy_veterinary-logo-.webp"
-            alt="vet clinic logo with cat, dog & bird" />
+          <a href="#header"
+            ><img
+              class="logo"
+              src="../img/vecteezy_veterinary-logo-.webp"
+              alt="vet clinic logo with cat, dog & bird" />
+          </a>
           <p>
             <span class="opacity">Magic </span
             ><span class="highlighted">Vet</span>
@@ -24,7 +26,7 @@
         <nav class="menu">
           <ul class="menu-list">
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#app">MagicVet App</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contacts">Contacts</a></li>
           </ul>
@@ -77,30 +79,90 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="container">
-          <h2>You and your pet are even more connected!</h2>
-          <p>
-            Our app simplifies the owner's life by recording your pet's health
-            history, managing monthly expenses and connecting you to a lively
-            community of pet parents.
-          </p>
-          <button class="login" type="button">Log in</button>
+      <section id="banner-section">
+        <div class="container bg">
+          <div class="left-side">
+            <h2 class="banner-title">
+              You and your pet are even more connected!
+            </h2>
+            <p class="banner-text">
+              Our app simplifies the owner's life by recording your pet's health
+              history, managing monthly expenses and connecting you to a lively
+              community of pet parents.
+            </p>
+            <button class="login btn-banner" type="button">Log in</button>
+          </div>
+          <div class="right-side">
+            <img
+              class="banner-img"
+              src="../img/ilustration.png"
+              alt="a picture with a cat plaing with a fish in tank" />
+          </div>
         </div>
       </section>
-      <section id="services">
+      <section id="app">
         <div class="container">
-          <div></div>
-          <div>
-            <h2>Download our app!</h2>
+          <div class="left-side">
+            <img src="../img/app.png" alt="" />
+          </div>
+          <div class="right-side">
+            <h2 class="app-title">Download our app!</h2>
+            <ul class="app-list">
+              <li class="app-item">
+                <div class="app-item-img">
+                  <img src="../img/icon.png" alt="" />
+                </div>
+                <div class="app-item-content">
+                  <h3>Smart alerts and reminders</h3>
+                  <p>
+                    Receive personalized notifications for vaccinations,
+                    veterinary appointments and other needs, ensuring you never
+                    miss essential care for your pet.
+                  </p>
+                </div>
+              </li>
+              <li class="app-item">
+                <div>
+                  <img class="app-item-img" src="../img/icon.png" alt="" />
+                </div>
+                <div class="app-item-content">
+                  <h3>User-friendly interface for everyone</h3>
+                  <p>
+                    Our App is designed to be intuitive, allowing everyone,
+                    regardless of digital experience, to make the most of the
+                    app's features.
+                  </p>
+                </div>
+              </li>
+              <li class="app-item">
+                <div class="app-item-img">
+                  <img src="../img/icon.png" alt="" />
+                </div>
+                <div class="app-item-content">
+                  <h3>Intuitive and attractive design</h3>
+                  <p>
+                    Enjoy a visually pleasing, easy-to-navigate interface
+                    designed to provide a fluid and engaging experience for
+                    every user.
+                  </p>
+                </div>
+              </li>
+            </ul>
+
             <div class="app__btn-wrapper">
               <div class="app__apple">
+                <svg class="app__icon" width="36" height="36">
+                  <use href="../symbol-defs.svg#icon-apple"></use>
+                </svg>
                 <p class="app-text">
-                  Available on the<br />
+                  Available on<br />
                   <span class="app-text__capitalize">App Store</span>
                 </p>
               </div>
               <div class="app__google">
+                <svg class="app__icon" width="36" height="36">
+                  <use href="../symbol-defs.svg#icon-googleplay"></use>
+                </svg>
                 <p class="app-text">
                   Available on <br />
                   <span class="app-text__capitalize">Google Play</span>

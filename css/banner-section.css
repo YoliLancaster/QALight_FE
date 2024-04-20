@@ -1,0 +1,33 @@
+#banner-section .container {
+  display: flex;
+  align-items: center;
+}
+
+#banner-section .bg {
+  height: 300px;
+  background: var(--banner-bg-grey);
+}
+
+#banner-section .right-side {
+  flex-shrink: 0;
+}
+
+.banner-img {
+  margin-top: 55px;
+  width: 95%;
+}
+
+#banner-section .banner-title,
+#banner-section .banner-text {
+  margin-left: 10px;
+}
+
+.banner-title {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#banner-section .banner-text {
+  margin-bottom: 30px;
+}

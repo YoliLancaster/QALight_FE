@@ -1,0 +1,49 @@
+#app .container {
+  display: flex;
+  gap: 40px;
+}
+
+#app .right-side {
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.app-title {
+  font-weight: 600;
+  font-size: 48px;
+  text-wrap: balance;
+  text-transform: uppercase;
+}
+
+.app-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.app-item {
+  display: flex;
+  gap: 15px;
+}
+
+.app-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 7px;
+  text-wrap: balance;
+}
+
+.app-item-content h3 {
+  opacity: 0.8;
+}
+
+.app-item-content p {
+  font-weight: 200;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+
+.app-item-img {
+  margin-left: -25px;
+}
