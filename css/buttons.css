@@ -10,10 +10,37 @@
   cursor: pointer;
 }
 
+#header .login {
+  margin-bottom: 10px;
+}
+
 .btn-hero {
   width: 300px;
   transition: 0.5s ease-in;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-hero span {
+  transition: 0.5s;
+}
+
+.btn-hero:hover span {
+  transform: translateX(-8px);
+}
+
+.btn-hero svg {
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  left: 5px;
+}
+
+.btn-hero:hover svg {
+  opacity: 1;
 }
 
 .login:hover,

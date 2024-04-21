@@ -29,9 +29,25 @@ header {
   gap: 20px;
 }
 
+.menu-link {
+  background: linear-gradient(currentColor, currentColor) 50% 100% no-repeat;
+  background-size: 0 2px;
+  transition: background 0.5s ease 0s;
+  padding-bottom: 10px;
+}
+
+.menu-link:hover {
+  background-size: 100% 2px;
+}
+
 .logo-container {
   display: flex;
   align-items: center;
+}
+
+.login-icon {
+  fill: white;
+  transform: rotate(280deg) scaleX(-1);
 }
 
 .logo-container p {
