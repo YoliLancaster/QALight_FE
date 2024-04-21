@@ -5,7 +5,8 @@
 
 #banner-section .bg {
   height: 300px;
-  background: var(--banner-bg-grey);
+  background: rgb(237, 232, 232);
+  border-radius: 8px;
 }
 
 #banner-section .right-side {
@@ -30,4 +31,16 @@
 
 #banner-section .banner-text {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1090px) {
+}
+
+@media screen and (max-width: 899px) and (min-width: 768px) {
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+  #banner-section .right-side {
+    display: none;
+  }
 }

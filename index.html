@@ -22,16 +22,23 @@
             ><span class="highlighted">Vet</span>
           </p>
         </div>
-
-        <nav class="menu">
-          <ul class="menu-list">
-            <li class="menu-link"><a href="#about">About</a></li>
-            <li class="menu-link"><a href="#app">MagicVet App</a></li>
-            <li class="menu-link"><a href="#testimonials">Testimonials</a></li>
-            <li class="menu-link"><a href="#contacts">Contacts</a></li>
-          </ul>
-          <button class="login btn-header" type="button">Log in</button>
-        </nav>
+        <div class="hamburger-wrapper">
+          <input type="checkbox" class="toggle-menu" />
+          <div class="hamburger"></div>
+          <div class="hamburger-checked">
+            <nav class="menu">
+              <ul class="menu-list">
+                <li class="menu-link"><a href="#about">About</a></li>
+                <li class="menu-link"><a href="#app">MagicVet App</a></li>
+                <li class="menu-link">
+                  <a href="#testimonials">Testimonials</a>
+                </li>
+                <li class="menu-link"><a href="#contacts">Contacts</a></li>
+              </ul>
+              <button class="login btn-header" type="button">Log in</button>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -246,13 +253,15 @@
                 </div>
               </li>
             </ul>
-            <input
-              class="input-email"
-              type="email"
-              placeholder="Your email address..." />
-            <svg class="subscribe-input-icon" width="24" height="24">
-              <use href="../symbol-defs.svg#icon-arrow-right2"></use>
-            </svg>
+            <div class="input-wrapper">
+              <input
+                class="input-email"
+                type="email"
+                placeholder="Your email address..." />
+              <svg class="subscribe-input-icon" width="24" height="24">
+                <use href="../symbol-defs.svg#icon-arrow-right2"></use>
+              </svg>
+            </div>
           </div>
           <div class="right-side">
             <img
@@ -305,13 +314,15 @@
               <p><a href="mailto:magicvet@gmail.com">magicvet@gmail.com</a></p>
             </div>
             <div class="subscribe-footer">
-              <input
-                class="input-email"
-                type="email"
-                placeholder="Your email address..." />
-              <button class="btn-email-footer login" type="button">
-                Subscribe
-              </button>
+              <div class="input-wrapper">
+                <input
+                  class="input-email"
+                  type="email"
+                  placeholder="Your email address..." />
+                <button class="btn-email-footer login" type="button">
+                  Subscribe
+                </button>
+              </div>
             </div>
           </div>
 

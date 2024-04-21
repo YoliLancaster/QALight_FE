@@ -16,6 +16,8 @@ header {
   box-sizing: border-box;
   width: 100%;
   max-width: 1288px;
+  padding: 0 25px;
+  align-items: center;
 }
 
 .menu {
@@ -62,4 +64,52 @@ header {
 
 .highlighted {
   color: var(--color-primary-light);
+}
+
+@media screen and (max-width: 1090px) {
+  .logo-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 899px) and (min-width: 768px) {
+  .logo-container {
+    flex-direction: column;
+    max-width: fit-content;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .logo-container p {
+    font-size: clamp(2.1875rem, 1.25rem + 1.6667vw, 2.5rem);
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-container p {
+    font-size: clamp(1.875rem, 1.4276rem + 2.2371vw, 2.5rem);
+  }
+
+  .logo-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .menu-list {
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
