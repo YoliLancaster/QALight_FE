@@ -6,6 +6,8 @@
   --banner-bg-grey: #e7eaee;
   --slider-grey: #ced6e0;
   --slider-shadow: rgb(0 0 2 / 35%) 0px 20px 30px -10px;
+  --app-download-shadow: 0px 4px 4px 0px #00000040;
+  --color-bg-footer: rgb(237, 232, 232);
   scroll-behavior: smooth;
 }
 

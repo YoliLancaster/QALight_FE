@@ -45,7 +45,8 @@
   border-radius: 30px;
   height: 60px;
   border: 1px solid var(--slider-grey);
-  box-shadow: var(--slider-shadow);
+  /* box-shadow: var(--slider-shadow); */
+  box-shadow: var(--app-download-shadow);
   text-indent: 40px;
 }
 

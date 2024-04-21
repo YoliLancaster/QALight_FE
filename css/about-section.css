@@ -32,7 +32,8 @@
 }
 
 .card-container:hover {
-  box-shadow: 0 0 14px 4px rgb(0 0 2 / 35%);
+  /* box-shadow: 0 0 14px 4px rgb(0 0 2 / 35%); */
+  box-shadow: var(--app-download-shadow);
 }
 
 .card-container:hover .card-icon {

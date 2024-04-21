@@ -6,10 +6,19 @@
   font-size: 18px;
   font-weight: 600;
   color: white;
+  transition: 0.5s ease-in;
+  cursor: pointer;
 }
 
 .btn-hero {
   width: 300px;
+  transition: 0.5s ease-in;
+  cursor: pointer;
+}
+
+.login:hover,
+.btn-hero:hover {
+  box-shadow: var(--app-download-shadow);
 }
 
 .btn-banner {
@@ -58,4 +67,10 @@
 .app__apple:hover .app-text,
 .app__google:hover .app-text {
   color: white;
+}
+
+/* button subscribe in footer */
+
+.subscribe-footer .btn-email-footer {
+  width: 30%;
 }
