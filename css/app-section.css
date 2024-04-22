@@ -49,13 +49,31 @@
 }
 
 @media screen and (max-width: 1090px) {
+  #app .right-side,
+  #app .left-side {
+    flex-basis: 50%;
+    justify-content: center;
+  }
+  .app-mock {
+    margin-top: 100px;
+    margin-bottom: auto;
+    height: auto;
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 899px) and (min-width: 768px) {
+  #banner-section .app-item {
+    flex-basis: 50%;
+  }
 }
 
 @media (max-width: 767px) and (min-width: 320px) {
   #app .left-side {
     display: none;
+  }
+
+  .app-title {
+    font-size: clamp(1.5625rem, 0.7124rem + 4.2506vw, 2.75rem);
   }
 }

@@ -27,6 +27,7 @@
   border-radius: 50%;
   border-image-width: 60px;
   padding: 10px;
+  overflow: visible;
 }
 
 .subscribe-item-content {
@@ -49,41 +50,41 @@
   /* box-shadow: var(--slider-shadow); */
   box-shadow: var(--app-download-shadow);
   text-indent: 40px;
+  padding-right: 60px;
 }
 
 .input-email:focus {
   outline-color: var(--color-primary-transparent);
 }
 
-/* #subscribe-email .left-side {
+.input-wrapper {
   position: relative;
-} */
-
-#subscribe-email .input-wrapper {
-  position: relative;
+  max-width: 100%;
+  min-width: 400px;
 }
 
-#subscribe-email .input-wrapper::before {
-  content: "";
+.input-wrapper .input-btn {
+  background: var(--color-primary-light);
+  border-radius: 50px;
+  aspect-ratio: 1;
+  height: 80%;
   position: absolute;
-  /* top: 432px;
-  left: 496px; */
-  top: 4px;
-  left: 498px;
-  width: 50px;
-  height: 50px;
-  background-color: var(--color-primary-light);
-  /* box-shadow: var(--slider-shadow); */
-  border-radius: 50%;
-  z-index: 2;
+  top: 10%;
+  right: 5px;
+  border: none;
 }
 
-.subscribe-input-icon {
+.input-btn .subscribe-input-icon {
   fill: white;
   position: absolute;
   z-index: 3;
-  top: 16px;
-  left: 511px;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+}
+
+.title-wrapper {
+  display: flex;
 }
 
 /* hide placeholder */
@@ -121,14 +122,46 @@
   transition: opacity 0.3s ease;
 }
 
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1096px) {
+  #subscribe-email .right-side,
+  #subscribe-email .left-side {
+    flex-basis: 50%;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 899px) and (min-width: 768px) {
+  #subscribe-email .right-side {
+    flex-basis: 50%;
+  }
+
+  .subscribe-img {
+    margin-top: 100px;
+    margin-bottom: auto;
+    height: auto;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 767px) and (min-width: 320px) {
   #subscribe-email .right-side {
     display: none;
+  }
+
+  #subscribe-email .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe-title {
+    font-size: clamp(1.5625rem, 0.7124rem + 4.2506vw, 2.75rem);
+  }
+}
+
+@media (max-width: 500px) and (min-width: 320px) {
+  .input-wrapper {
+    position: relative;
+    max-width: 100%;
+    min-width: 300px;
   }
 }
