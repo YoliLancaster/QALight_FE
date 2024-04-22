@@ -1,6 +1,7 @@
 #contacts {
   display: flex;
   justify-content: center;
+  padding: 0 24px;
 }
 
 #contacts .container-header {
@@ -16,21 +17,28 @@
   display: flex;
   gap: 50px;
   justify-content: space-around;
+  width: 100%;
 }
 
 .middle-footer {
   display: flex;
   justify-content: space-between;
   padding: 0 50px 0;
+  gap: 50px;
+  width: 100%;
 }
 
 .middle-footer .subscribe-footer {
   width: 65%;
 }
 
+.subscribe-footer .input-wrapper {
+  gap: 20px;
+  width: 100%;
+}
+
 .subscribe-footer .input-email {
-  width: 70%;
-  margin-right: 20px;
+  width: 100%;
 }
 
 .contacts {
@@ -62,4 +70,28 @@
   padding-top: 10px;
   font-weight: 200;
   font-size: 14px;
+}
+
+@media screen and (max-width: 1090px) {
+}
+
+@media screen and (max-width: 899px) and (min-width: 768px) {
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+  #contacts .logo-container {
+    width: auto;
+  }
+
+  .middle-footer .contacts {
+    display: none;
+  }
+
+  .logo-container .contacts {
+    display: block;
+  }
+
+  .middle-footer .subscribe-footer {
+    width: fit-content;
+  }
 }
