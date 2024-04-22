@@ -1,4 +1,4 @@
-import { services } from "../helpers/services.js";
+import { services } from "./helpers/services.js";
 
 const grid = document.querySelector(".grid");
 
