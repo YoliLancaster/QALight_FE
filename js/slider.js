@@ -1,5 +1,5 @@
-import { fetchData } from "..//helpers/fetch.js";
-import { reviews } from "..//helpers/reviews.js";
+import { fetchData } from "../helpers/fetch.js";
+import { reviews } from "../helpers/reviews.js";
 
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
