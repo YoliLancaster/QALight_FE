@@ -13,7 +13,7 @@ function createCard(data) {
       ({ id, service, description, image }) =>
         `<div class="card-container">
             <div class="img-wrapper">
-                <img src="../img/${image}.png" alt="" class="card-icon" />
+                <img src="./img/${image}.png" alt="" class="card-icon" />
               </div>
 
               <div class="card-bottom">
