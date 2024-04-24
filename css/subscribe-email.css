@@ -129,18 +129,17 @@
     flex-basis: 50%;
     justify-content: center;
   }
-}
-
-@media screen and (max-width: 899px) and (min-width: 768px) {
-  #subscribe-email .right-side {
-    flex-basis: 50%;
-  }
-
   .subscribe-img {
     margin-top: 100px;
     margin-bottom: auto;
     height: auto;
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 899px) and (min-width: 768px) {
+  #subscribe-email .right-side {
+    flex-basis: 50%;
   }
 }
 
