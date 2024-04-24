@@ -191,6 +191,10 @@
   #testimonials :is(.swiper-button-prev, .swiper-button-next) {
     top: 50%;
   }
+
+  .testimonials-title {
+    font-size: clamp(1.5625rem, 0.7124rem + 4.2506vw, 2.75rem);
+  }
 }
 
 @media (max-width: 767px) and (min-width: 320px) {
@@ -199,5 +203,9 @@
   }
   .swiper {
     height: 100%;
+  }
+
+  .testimonials-title {
+    font-size: clamp(1.5625rem, 0.7124rem + 4.2506vw, 2.75rem);
   }
 }

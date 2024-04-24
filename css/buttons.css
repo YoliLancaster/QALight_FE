@@ -102,6 +102,9 @@
 }
 
 @media screen and (max-width: 1090px) {
+  .btn-banner {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 899px) and (min-width: 768px) {

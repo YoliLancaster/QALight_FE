@@ -32,10 +32,13 @@
   font-weight: 600;
   font-size: 30px;
   margin-bottom: 20px;
+  text-wrap: balance;
 }
 
 #banner-section .banner-text {
   margin-bottom: 30px;
+  font-size: 20px;
+  text-wrap: balance;
 }
 
 @media screen and (max-width: 1090px) {
@@ -51,11 +54,19 @@
     flex-basis: 50%;
   }
 
-  .banner-img {
+  /* .banner-img {
     margin-top: 100px;
     margin-bottom: auto;
     height: auto;
     max-width: 100%;
+  } */
+
+  #banner-section .banner-title {
+    font-size: 28px;
+  }
+
+  #banner-section .banner-text {
+    font-size: 18px;
   }
 }
 
@@ -66,14 +77,24 @@
 
   #banner-section .bg {
     width: 100%;
+    height: max-content;
+    padding: 20px 30px;
   }
 
   #banner-section .container {
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
 
   .subscribe-title {
     font-size: clamp(1.5625rem, 0.7124rem + 4.2506vw, 2.75rem);
+  }
+
+  #banner-section .banner-title {
+    font-size: 26px;
+  }
+
+  #banner-section .banner-text {
+    font-size: 18px;
   }
 }
