@@ -103,21 +103,22 @@
 }
 
 @media screen and (max-width: 1277px) {
-  .grid {
+  /* .grid {
     gap: 60px 60px;
-  }
+  } */
 }
 
 @media screen and (max-width: 1086px) {
   .grid {
-    grid-template-columns: repeat(auto-fit, 250px);
-    grid-auto-rows: 256px;
-    gap: 60px 50px;
+    grid-template-columns: repeat(auto-fit, 240px);
+    grid-auto-rows: max-content;
+    gap: 40px 30px;
   }
 
   .card-container {
-    width: 260px;
-    height: 260px;
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 25px;
   }
 
   .card-title {
